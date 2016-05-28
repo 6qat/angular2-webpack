@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { UserService } from './user.service';
+import {Component} from '@angular/core';
+import {UserService} from './user.service';
 
 @Component({
     selector: 'my-users',
@@ -10,6 +10,7 @@ import { UserService } from './user.service';
 export class UsersComponent {
 
     users: string[];
+
     constructor(private userService: UserService) {
         this.users = this.userService.getUsers();
     }

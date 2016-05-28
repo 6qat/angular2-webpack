@@ -22,6 +22,7 @@ import {UsersComponent} from './users/users.component';
 })
 @RouteConfig([
     {path: '/', component: HomeComponent, name: 'Home'},
+    {path: '/Users', component: UsersComponent, name: 'Users'},
     {path: '/About', component: AboutComponent, name: 'About'}
 ])
 export class AppComponent {
