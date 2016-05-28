@@ -7,6 +7,7 @@ import {AboutComponent} from './about';
 
 import '../style/uikit.less';
 import '../style/app.scss';
+import {UsersComponent} from './users/users.component';
 
 /*
  * App Component
@@ -15,7 +16,7 @@ import '../style/app.scss';
 @Component({
     selector: 'my-app', // <my-app></my-app>
     providers: [ApiService],
-    directives: [...ROUTER_DIRECTIVES],
+    directives: [...ROUTER_DIRECTIVES, UsersComponent],
     template: require('./app.component.html'),
     styles: [require('./app.component.scss')],
 })

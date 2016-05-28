@@ -130,11 +130,13 @@ module.exports = function makeWebpackConfig() {
       // all css required in src/app files will be merged in js files
       {test: /\.scss$/, exclude: root('src', 'style'), loader: 'raw!postcss!sass'},
 
+      // @6qat: support for .less files
       {
         test: /\.less$/,
         exclude: root('src', 'app'),
         loader: isTest ? 'null' : ExtractTextPlugin.extract('style', 'css?sourceMap!postcss!less-loader')
       },
+      {test: /\.less$/, exclude: root('src', 'style'), loader: 'raw!postcss!less'},
 
       // support for .html as raw text
       // todo: change the loader to something that adds a hash to images
