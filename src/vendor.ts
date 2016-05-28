@@ -11,3 +11,6 @@ import 'rxjs';
 
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
+
+import '../node_modules/jquery/src/jquery.js';
+import 'uikit';
