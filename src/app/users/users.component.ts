@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UserService} from './user.service';
 
 @Component({
@@ -7,12 +7,16 @@ import {UserService} from './user.service';
     providers: [UserService]
 
 })
-export class UsersComponent {
+export class UsersComponent implements OnInit {
 
     users: string[];
 
     constructor(private userService: UserService) {
         this.users = this.userService.getUsers();
+    }
+
+    ngOnInit() {
+        console.log('Hello Users');
     }
 
 }
