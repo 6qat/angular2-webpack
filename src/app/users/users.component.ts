@@ -3,7 +3,7 @@ import {UserService} from './user.service';
 
 @Component({
     selector: 'my-users',
-    template: '<h1>users</h1><ul><li *ngFor="let user of users" >{{ user }}</li></ul>',
+    template: '<h1>Users</h1><ul><li *ngFor="let user of users" >{{ user }}</li></ul>',
     providers: [UserService]
 
 })
