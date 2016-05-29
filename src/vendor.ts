@@ -12,6 +12,6 @@ import 'rxjs';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
 
-import '../node_modules/jquery/src/jquery.js';
+import 'jquery/src/jquery.js';
 import 'uikit/dist/js/uikit.js';
 import 'uikit/dist/js/components/autocomplete.js';
