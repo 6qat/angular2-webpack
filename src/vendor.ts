@@ -13,4 +13,5 @@ import 'rxjs';
 // You can import js, ts, css, sass, ...
 
 import '../node_modules/jquery/src/jquery.js';
-import 'uikit';
+import 'uikit/dist/js/uikit.js';
+import 'uikit/dist/js/components/autocomplete.js';
